@@ -1,0 +1,30 @@
+{
+  "cards": {
+    "1": {
+      "id": 1,
+      "type": 1,
+      "src": "image url",
+      "name": "card title",
+      "description": "card description",
+      "tier": 1
+    }
+  },
+  "types": {
+    "1": {
+      "id": 1,
+      "name": "Tipo 1"
+    }
+  },
+  "rarities": {
+    "1": {
+      "id": 1,
+      "name": "Rarity 1"
+    }
+  },
+  "tiers": {
+    "1": {
+      "id": 1,
+      "name": "Tier 1"
+    }
+  }
+}
