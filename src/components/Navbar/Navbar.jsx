@@ -9,9 +9,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center">
         <span>LOGO</span>
-        <span className="uppercase">{languageState.texts.Navbar.Title}</span>
+        <span className="uppercase name">
+          {languageState.texts.Navbar.Title}
+        </span>
       </div>
       <div className="links">
         {languageState.texts.Navbar.Links.map((item) => (

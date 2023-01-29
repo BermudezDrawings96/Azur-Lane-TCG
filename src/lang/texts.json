@@ -60,6 +60,11 @@
       "Tier": {
         "Title": "Tier",
         "Tiers": ["T1", "T2", "T3", "T4", "T6", "T8"]
+      },
+      "Search": {
+        "placeholder": "ejemplo \"Unidad\"",
+        "id": "Buscar por Id",
+        "favorites": "Favoritos"
       }
     }
   }
