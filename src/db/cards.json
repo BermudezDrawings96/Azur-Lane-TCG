@@ -3,28 +3,179 @@
     "1": {
       "id": 1,
       "type": 1,
-      "src": "image url",
-      "name": "card title",
-      "description": "card description",
-      "tier": 1
+      "nation": 2,
+      "name": "ABUKUMA",
+      "tier": 1,
+      "rarity": 1,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/Akagi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675016371396",
+      "directAttack": 1,
+      "torpedoDamage": 43,
+      "mainDamage": 12,
+      "deepLoad": 48,
+      "airDamage": 0,
+      "hitPoints": 59,
+      "effectName": "Ligero como el viento",
+      "description": "Puedes desplegar esta Unidad adicionalmente en el turno que despliegas un Crucero",
+      "effect_Type": 1,
+      "serie": "SE-ABKM-06"
     }
   },
   "types": {
     "1": {
       "id": 1,
-      "name": "Tipo 1"
+      "name": "Destructor"
+    },
+    "2": {
+      "id": 2,
+      "name": "Crucero"
+    },
+    "3": {
+      "id": 3,
+      "name": "Crucero Pesado"
+    },
+    "4": {
+      "id": 4,
+      "name": "Gran Crucero"
+    },
+    "5": {
+      "id": 5,
+      "name": "Acorazado"
+    },
+    "6": {
+      "id": 6,
+      "name": "Portaaviones"
+    },
+    "7": {
+      "id": 7,
+      "name": "Portaaviones Ligero"
+    },
+    "9": {
+      "id": 9,
+      "name": "Submarino"
     }
   },
   "rarities": {
     "1": {
       "id": 1,
-      "name": "Rarity 1"
+      "name": "Común"
+    },
+    "2": {
+      "id": 2,
+      "name": "Común limitado"
+    },
+    "3": {
+      "id": 3,
+      "name": "Rara"
+    },
+    "4": {
+      "id": 4,
+      "name": "Ultra Rara"
     }
   },
   "tiers": {
     "1": {
       "id": 1,
-      "name": "Tier 1"
+      "name": "T1"
+    },
+    "2": {
+      "id": 2,
+      "name": "T2"
+    },
+    "3": {
+      "id": 3,
+      "name": "T3"
+    },
+    "4": {
+      "id": 4,
+      "name": "T4"
+    },
+    "5": {
+      "id": 5,
+      "name": "T6"
+    },
+    "6": {
+      "id": 6,
+      "name": "T8"
+    }
+  },
+  "nations": {
+    "1": {
+      "id": 1,
+      "name": "SAKURA EMPIRE"
+    },
+    "2": {
+      "id": 2,
+      "name": "IRON BLOOD"
+    },
+    "3": {
+      "id": 3,
+      "name": "SARDEGNA EMPIRE"
+    },
+    "4": {
+      "id": 4,
+      "name": "VICHYA DOMINION"
+    },
+    "5": {
+      "id": 5,
+      "name": "IRIS LIBRE"
+    },
+    "6": {
+      "id": 6,
+      "name": "EAGLE UNION"
+    },
+    "7": {
+      "id": 7,
+      "name": "ROYAL NAVY"
+    },
+    "8": {
+      "id": 8,
+      "name": "DRAGON EMPERY"
+    },
+    "9": {
+      "id": 9,
+      "name": "NORTHERN PARLIAMENT"
+    },
+    "10": {
+      "id": 10,
+      "name": "ESPECIAL"
+    }
+  },
+  "effect_Types": {
+    "1": {
+      "id": 1,
+      "name": "Despliegue adicional"
+    },
+    "2": {
+      "id": 2,
+      "name": "Destruccion de Unidad"
+    },
+    "3": {
+      "id": 3,
+      "name": "Destruccion de Flota"
+    },
+    "4": {
+      "id": 4,
+      "name": "Destruccion de Base"
+    },
+    "5": {
+      "id": 5,
+      "name": "Recuperacion"
+    },
+    "6": {
+      "id": 6,
+      "name": "Cancelar Efecto"
+    },
+    "7": {
+      "id": 7,
+      "name": "Añadir a la Flota"
+    },
+    "8": {
+      "id": 8,
+      "name": "Restriccion de juego"
+    },
+    "9": {
+      "id": 9,
+      "name": "Control"
     }
   }
 }

@@ -60,7 +60,7 @@ code {
 }
 
 .search-container {
-  margin-top: 28px;
+  margin-top: 31px;
 }
 
 .checkbox-container {
@@ -103,8 +103,8 @@ code {
 }
 
 .rarity {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 32px;
 }
 
 .rarity img {
