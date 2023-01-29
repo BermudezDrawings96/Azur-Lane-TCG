@@ -16,7 +16,23 @@ code {
     monospace;
 }
 
+.navbar {
+  padding: 0 40px;
+  margin-top: 10px;
+  height: 45px;
+  justify-content: space-between;
+  align-items: center;
+  @apply flex;
+}
+
+.links {
+  width: 50%;
+  justify-content: space-between;
+  @apply flex;
+}
+
 .header {
+  padding: 0 40px;
   margin-top: 40px;
 }
 

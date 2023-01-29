@@ -1,5 +1,26 @@
 {
   "es": {
+    "Navbar": {
+      "Title": "Against the Storm",
+      "Links": [
+        {
+          "label": "¿Cómo jugar?",
+          "to": "/how-to-place"
+        },
+        {
+          "label": "App",
+          "to": "/app"
+        },
+        {
+          "label": "Wiki",
+          "to": "/wiki"
+        },
+        {
+          "label": "¿Quienes somos?",
+          "to": "/about-us"
+        }
+      ]
+    },
     "Filters": {
       "Nations": {
         "Title": "Naciones",
