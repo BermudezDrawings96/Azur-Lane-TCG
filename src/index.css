@@ -27,6 +27,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.radial {
+  font-size: 13px;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background: crimson;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nation .radial {
+  right: -5px;
+}
+
 .name {
   color: #2d2d2d;
   font-size: 35px;
@@ -85,7 +103,7 @@ body {
 }
 
 .search-container {
-  margin-top: 52px;
+  margin-top: 70px;
 }
 
 .checkbox-container input {
@@ -116,6 +134,7 @@ body {
 }
 
 .type {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
