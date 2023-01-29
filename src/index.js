@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import "@fontsource/roboto";
+import "@fontsource/poppins";
+
 import { LanguageProvider } from "./context/LanguageProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

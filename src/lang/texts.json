@@ -1,7 +1,7 @@
 {
   "es": {
     "Navbar": {
-      "Title": "Against the Storm",
+      "Title": "Against the waves",
       "Links": [
         {
           "label": "¿Cómo jugar?",
@@ -22,6 +22,7 @@
       ]
     },
     "Filters": {
+      "Tutorial": "Tutorial",
       "Nations": {
         "Title": "Naciones",
         "Nations": [

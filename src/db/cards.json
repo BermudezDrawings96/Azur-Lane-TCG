@@ -8,7 +8,7 @@
       "tier": 1,
       "rarity": 1,
       "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-ABKM-06.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021647269",
-      "directAttack": 1,
+      "directAttack": 0,
       "torpedoDamage": 43,
       "mainDamage": 12,
       "deepLoad": 48,
@@ -18,8 +18,199 @@
       "description": "Puedes desplegar esta Unidad adicionalmente en el turno que despliegas un Crucero",
       "effect_Type": 1,
       "serie": "SE-ABKM-06"
+    },
+    "2": {
+      "id": 2,
+      "type": 6,
+      "nation": 2,
+      "name": "AKAGI",
+      "tier": 6,
+      "rarity": 4,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-AKGI-01.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021585897",
+      "directAttack": 1,
+      "torpedoDamage": 0,
+      "mainDamage": 16,
+      "deepLoad": 0,
+      "airDamage": 91,
+      "hitPoints": 420,
+      "effectName": "Castillo rojo",
+      "description": "> Solo puede desplegarse utilizando Portaaviones como material > Cuando esta Unidad selecciona a otra como objetivo de un ataque la misma no podrá activar sus efectos hasta el final de este turno > Cuando esta Unidad causa Daño a los puntos vitales del Oponente automáticamente tu recibes 1 punto vital adicional, > Esta Unidad puede atacar tantas veces como Puntos vitales poseas",
+      "effect_Type": 1,
+      "serie": "SE-AKGI-01"
+    },
+    "3": {
+      "id": 3,
+      "type": 3,
+      "nation": 2,
+      "name": "AOBA",
+      "tier": 2,
+      "rarity": 2,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-AOB-01.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021566773",
+      "directAttack": 0,
+      "torpedoDamage": 73,
+      "mainDamage": 17,
+      "deepLoad": 0,
+      "airDamage": 0,
+      "hitPoints": 90,
+      "effectName": "Señal en el viento",
+      "description": "> Cuando esta Unidad declara un ataque aumenta sus puntos de daño principal igual a la suma total de los puntos de daño principal de todas las unidades de la clase Aoba en tu TO.",
+      "effect_Type": 10,
+      "serie": "SE-AOB-01"
+    },
+    "4": {
+      "id": 4,
+      "type": 3,
+      "nation": 2,
+      "name": "KINUGASA",
+      "tier": 2,
+      "rarity": 2,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-AOB-02.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021564301",
+      "directAttack": 0,
+      "torpedoDamage": 73,
+      "mainDamage": 17,
+      "deepLoad": 0,
+      "airDamage": 0,
+      "hitPoints": 90,
+      "effectName": "Viento de cambio",
+      "description": "Durante tu Turno puedes enviar esta Unidad desde la Flota al Astillero y este Turno aumentar en 1 la cantidad de Despliegues normales que puedes realizar y  seleccionar 1 Unidad que no sea KINUGASA en el  Astillero y recuperarla a la Flota.",
+      "effect_Type": ["2", "5"],
+      "serie": "SE-AOB-02"
+    },
+    "5": {
+      "id": 5,
+      "type": 3,
+      "nation": 2,
+      "name": "CHITOSE",
+      "tier": 3,
+      "rarity": 3,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-CHTSE-01.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021589496",
+      "directAttack": 1,
+      "torpedoDamage": 0,
+      "mainDamage": 10,
+      "deepLoad": 0,
+      "airDamage": 0,
+      "hitPoints": 153,
+      "effectName": "Viento histerico",
+      "description": "Mientras esta Unidad está desplegada, Todos los Portaaviones en el TO ven divididas a la mitad todas sus estadísticas de ataque originales. Si esta Unidad es añadida a la Flota por efecto y no controlas ningún Portaaviones, puedes en ese mismo turno Desplegarla Adicionalmente.",
+      "effect_Type": ["1", "7", "11"],
+      "serie": "SE-CHTSE-01"
+    },
+    "6": {
+      "id": 6,
+      "type": 3,
+      "nation": 2,
+      "name": "CHIYODA",
+      "tier": 3,
+      "rarity": 3,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-CHTSE-01.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021589496",
+      "directAttack": 1,
+      "torpedoDamage": 0,
+      "mainDamage": 10,
+      "deepLoad": 0,
+      "airDamage": 0,
+      "hitPoints": 153,
+      "effectName": "Vanguardia",
+      "description": "Los puntos de Daño de Bombardeo de esta Unidad se multiplican x Cada portaaviones en el TO de ambos Jugadores.",
+      "effect_Type": ["11"],
+      "serie": "SE-CHTSE-02"
+    },
+    "7": {
+      "id": 7,
+      "type": 1,
+      "nation": 2,
+      "name": "SHIRAYUKI",
+      "tier": 1,
+      "rarity": 4,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-FBK-02.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021582341",
+      "directAttack": 0,
+      "torpedoDamage": 55,
+      "mainDamage": 2,
+      "deepLoad": 18,
+      "airDamage": 0,
+      "hitPoints": 20,
+      "effectName": "Pequeño sendero",
+      "description": "Puedes descartar esta Unidad desde la Flota hacia cualquier zona de pecios y luego declarar 1 nombre de Unidad. Si la misma se encuentra en la Flota de algún jugador debe ser descartada hacia la zona de pecios (tantas copias como posean). ",
+      "effect_Type": ["4", "10"],
+      "serie": "SE-FBK-02"
+    },
+    "8": {
+      "id": 8,
+      "type": 1,
+      "nation": 2,
+      "name": "URANAMI",
+      "tier": 1,
+      "rarity": 1,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-FBK-03.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021587810",
+      "directAttack": 0,
+      "torpedoDamage": 55,
+      "mainDamage": 2,
+      "deepLoad": 18,
+      "airDamage": 0,
+      "hitPoints": 20,
+      "effectName": "Pequeño sendero",
+      "description": "Puedes descartar esta Unidad desde la Flota hacia cualquier zona de pecios y luego declarar 1 nombre de Unidad. Si la misma se encuentra en la Flota de algún jugador debe ser descartada hacia la zona de pecios (tantas copias como posean). ",
+      "effect_Type": ["4", "10"],
+      "serie": "SE-FBK-03"
+    },
+    "9": {
+      "id": 9,
+      "type": 1,
+      "nation": 2,
+      "name": "URANAMI",
+      "tier": 1,
+      "rarity": 1,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-FBK-03.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021587810",
+      "directAttack": 0,
+      "torpedoDamage": 55,
+      "mainDamage": 2,
+      "deepLoad": 18,
+      "airDamage": 0,
+      "hitPoints": 20,
+      "effectName": "Pequeño sendero",
+      "description": "Puedes descartar esta Unidad desde la Flota hacia cualquier zona de pecios y luego declarar 1 nombre de Unidad. Si la misma se encuentra en la Flota de algún jugador debe ser descartada hacia la zona de pecios (tantas copias como posean). ",
+      "effect_Type": ["4", "10"],
+      "serie": "SE-FBK-03"
+    },
+    "10": {
+      "id": 10,
+      "type": 1,
+      "nation": 2,
+      "name": "MIYUKI",
+      "tier": 3,
+      "rarity": 1,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-FBK-04.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675021586608",
+      "directAttack": 0,
+      "torpedoDamage": 55,
+      "mainDamage": 8,
+      "deepLoad": 18,
+      "airDamage": 0,
+      "hitPoints": 20,
+      "effectName": "Nieve Profunda",
+      "description": "No es afectada por ningún efecto de clima. Siempre que esta Unidad destruya a otra, sus puntos de Aguante y Daño principal se duplican. Si esta carta es enviada a la zona de pecios exepto por batalla recuperas 1 punto Vital. ",
+      "effect_Type": ["12", "11", "13"],
+      "serie": "SE-FBK-04"
+    },
+    "11": {
+      "id": 11,
+      "type": 5,
+      "nation": 2,
+      "name": "HIEI",
+      "tier": 4,
+      "rarity": 3,
+      "src": "https://ik.imagekit.io/HBDimagebank/AZURLANE_CARD_PIC/Sakura_empire/SE-KNGO-02.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675025435087",
+      "directAttack": 1,
+      "torpedoDamage": 0,
+      "mainDamage": 62,
+      "deepLoad": 0,
+      "airDamage": 0,
+      "hitPoints": 372,
+      "effectName": "Flor de hierro",
+      "description": "Al inicio de tu Fase de Combate, Puedes seleccioar 1 Unidad en el TO del oponente, este turno recibirá como daño la suma del total de Daño Principal de todas las Unidades de Tier 3 o superior que controles + 50 adicional. Luego de cumplirse este efecto ninguna otra Unidad de Tier 3 o superior que controles puede declarar un ataque este Turno.",
+      "effect_Type": ["9"],
+      "serie": "SE-KNGO-02"
     }
   },
+
   "types": {
     "1": {
       "id": 1,
@@ -140,7 +331,7 @@
       "name": "ESPECIAL"
     }
   },
-  "effect_Types": {
+  "effect_Type": {
     "1": {
       "id": 1,
       "name": "Despliegue adicional"
@@ -175,7 +366,23 @@
     },
     "9": {
       "id": 9,
-      "name": "Control"
+      "name": "Control de campo"
+    },
+    "10": {
+      "id": 10,
+      "name": "Control de Juego"
+    },
+    "11": {
+      "id": 11,
+      "name": "Potenciar o Reducir"
+    },
+    "12": {
+      "id": 12,
+      "name": "Inmune"
+    },
+    "13": {
+      "id": 13,
+      "name": "Recuperar LP"
     }
   }
 }
