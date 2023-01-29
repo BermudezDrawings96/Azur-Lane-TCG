@@ -8,12 +8,15 @@ import "@fontsource/roboto";
 import "@fontsource/poppins";
 
 import { LanguageProvider } from "./context/LanguageProvider";
+import { FilterProvider } from "./context/FilterProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <LanguageProvider>
-      <App />
+      <FilterProvider>
+        <App />
+      </FilterProvider>
     </LanguageProvider>
   </React.StrictMode>
 );

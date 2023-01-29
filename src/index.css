@@ -20,6 +20,19 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  transition: background 500ms ease;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #2222225e;
+}
+
+.active {
+  background-color: #2222225e;
+}
+
 body {
   margin: 0;
   background-color: #2d2d2d;
@@ -29,19 +42,24 @@ body {
 
 .radial {
   font-size: 13px;
-  position: absolute;
   top: 0;
   right: -10px;
   background: crimson;
   border-radius: 100%;
   width: 18px;
   height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @apply absolute flex justify-center items-center;
+}
+
+.tier .radial {
+  right: -5px;
 }
 
 .nation .radial {
+  right: -5px;
+}
+
+.rarity .radial {
   right: -5px;
 }
 
@@ -64,16 +82,13 @@ body {
   margin-top: 10px;
   height: 45px;
   box-shadow: 0px 1px 50px -13px #9d9d9d;
-  justify-content: space-between;
-  align-items: center;
   background-color: #9d9d9d;
-  @apply flex;
+  @apply flex justify-between items-center;
 }
 
 .links {
   width: 45%;
-  justify-content: space-between;
-  @apply flex;
+  @apply flex justify-between;
 }
 
 @media (min-width: 1020px) {
@@ -103,7 +118,7 @@ body {
 }
 
 .search-container {
-  margin-top: 70px;
+  margin-top: 83px;
 }
 
 .checkbox-container input {
@@ -124,37 +139,36 @@ body {
 }
 
 .nation {
+  width: 50px;
+  height: 50px;
+  @apply flex items-center justify-center;
+}
+
+.nation img {
   width: 45px;
   height: 45px;
 }
 
-.nation img {
-  width: 100%;
-  height: 100%;
-}
-
 .type {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-transform: uppercase;
   font-size: 13px;
+  @apply uppercase flex flex-col relative items-center;
 }
 
 .rarity {
+  width: 45px;
+  height: 45px;
+  @apply flex items-center justify-center;
+}
+
+.rarity img {
   width: 40px;
   height: 32px;
 }
 
-.rarity img {
-  width: 100%;
-  height: 100%;
-}
-
 .tier {
-  color: #9d9d9d;
-  font-size: 25px;
+  width: 45px;
+  height: 45px;
+  @apply flex items-center justify-center;
 }
 
 .tier img {
@@ -179,14 +193,41 @@ body {
   flex-wrap: wrap;
   padding: 0 40px;
   margin-top: 40px;
-  justify-content: center;
-  @apply flex;
+  @apply flex justify-center;
 }
 
 .find {
-  position: absolute;
+  @apply absolute;
   width: 20px;
   top: 4px;
   right: 5px;
   cursor: pointer;
+}
+
+.scale-up {
+  animation: scale-up 500ms 1 ease;
+  transform: scale(1);
+}
+
+.scale-down {
+  animation: scale-down 500ms 1 ease;
+  transform: scale(0);
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-down {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }

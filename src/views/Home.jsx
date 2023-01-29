@@ -1,10 +1,10 @@
 import React from "react";
 
 // context
-import { useLanguage } from "../context/LanguageProvider";
+// import { useLanguage } from "../context/LanguageProvider";
 
 // images
-import meow from "../assets/MEOWFICIAL.png";
+// import meow from "../assets/MEOWFICIAL.png";
 
 // db
 import db from "../db/cards.json";
@@ -18,7 +18,7 @@ import Types from "./Section/Types";
 import Search from "./Section/Search";
 
 const Home = () => {
-  const { languageState } = useLanguage();
+  // const { languageState } = useLanguage();
 
   return (
     <div>
@@ -34,12 +34,12 @@ const Home = () => {
           <Types />
           <Search />
         </div>
-        <div className="flex flex-col justify-end">
+        {/* <div className="flex flex-col justify-end">
           <span className="uppercase meow-span">
             {languageState.texts.Filters.Tutorial}
           </span>
           <img src={meow} alt="meow" className="meow" />
-        </div>
+        </div> */}
       </div>
       <div className="main">
         {Object.values(db.cards).map((item) => (
