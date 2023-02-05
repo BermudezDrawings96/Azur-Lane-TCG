@@ -56,6 +56,6 @@ export const applyFilters = (filters, array) => {
   // by type
   const types = applyingFilter("type", Object.keys(typeFilter), tiers);
   // by input
-  const inputs = searchingByInput(input.toLowerCase(), types);
+  const inputs = searchingByInput(input ? input.toLowerCase() : "", types);
   return inputs;
 };

@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       <div className="links">
         {languageState.texts.Navbar.Links.map((item) => (
-          <Link className="uppercase font-bold" to={item.to}>
+          <Link key={item.to} className="uppercase font-bold" to={item.to}>
             {item.label}
           </Link>
         ))}

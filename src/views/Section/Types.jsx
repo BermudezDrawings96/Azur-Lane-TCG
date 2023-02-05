@@ -51,6 +51,7 @@ const Types = () => {
       <div className="flex gap-5">
         {typesState.map((item, i) => (
           <button
+            key={item.id}
             onClick={() => {
               setTypesState({ type: "toggle", target: item.id });
               setFilterState({
@@ -60,7 +61,6 @@ const Types = () => {
               });
             }}
             className="type"
-            key={item.id}
             type="button"
           >
             <span>{item.name}</span>
