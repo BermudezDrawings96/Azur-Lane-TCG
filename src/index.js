@@ -12,13 +12,11 @@ import { FilterProvider } from "./context/FilterProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <LanguageProvider>
-      <FilterProvider>
-        <App />
-      </FilterProvider>
-    </LanguageProvider>
-  </React.StrictMode>
+  <LanguageProvider>
+    <FilterProvider>
+      <App />
+    </FilterProvider>
+  </LanguageProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

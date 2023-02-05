@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // context
 // import { useLanguage } from "../context/LanguageProvider";
@@ -17,8 +17,17 @@ import Rarities from "./Section/Rarities";
 import Types from "./Section/Types";
 import Search from "./Section/Search";
 
+// contexts
+import { useFilter } from "../context/FilterProvider";
+
 const Home = () => {
   // const { languageState } = useLanguage();
+
+  const { filterState, setFilterState } = useFilter();
+
+  useEffect(() => {
+    setFilterState({ type: "set-result", array: Object.values(db.cards) });
+  }, []);
 
   return (
     <div>
@@ -42,8 +51,8 @@ const Home = () => {
         </div> */}
       </div>
       <div className="main">
-        {Object.values(db.cards).map((item) => (
-          <Card {...item} />
+        {filterState.result.map((item) => (
+          <Card key={item.id} {...item} />
         ))}
       </div>
     </div>
