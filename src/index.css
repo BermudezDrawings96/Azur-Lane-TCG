@@ -33,6 +33,37 @@ button:hover {
   background-color: #2222225e;
 }
 
+.down {
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.image-template {
+  margin-top: -20px;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: #222;
+}
+
+.sidebar {
+  width: 125px;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+.family {
+  background-color: #222;
+  width: 75px;
+  height: 100px;
+}
+
+.h4 {
+  font-size: 1.2rem;
+}
+
 body {
   margin: 0;
   background-color: #2d2d2d;
@@ -75,6 +106,10 @@ body {
 
 .logo {
   width: 140px;
+}
+
+.title {
+  width: 330px;
 }
 
 .navbar {
@@ -191,6 +226,23 @@ body {
 
 .opacity-down {
   opacity: 0;
+}
+
+.transition {
+  transition: all 500ms ease;
+}
+
+.my-blur {
+  background-color: #1b1b1bc0;
+  backdrop-filter: blur(10px);
+}
+
+.close {
+  color: aliceblue;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
 }
 
 .favorite-button {

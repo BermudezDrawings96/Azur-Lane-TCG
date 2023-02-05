@@ -6,6 +6,7 @@ import { useLanguage } from "../../context/LanguageProvider";
 
 // images
 import logoIco from "../../assets/LOGO_ICO.png";
+import title from "../../assets/TITLE.png";
 
 const Navbar = () => {
   const { languageState } = useLanguage();
@@ -14,9 +15,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="flex gap-3 items-center">
         <img className="logo" src={logoIco} alt="logo" />
-        <span className="uppercase name">
-          {languageState.texts.Navbar.Title}
-        </span>
+        <img className="title" src={title} alt="logo" />
       </div>
       <div className="links">
         {languageState.texts.Navbar.Links.map((item) => (

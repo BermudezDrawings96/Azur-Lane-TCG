@@ -67,6 +67,11 @@
         "id": "Buscar por ID",
         "favorites": "Favoritos"
       }
+    },
+    "Details": {
+      "Family": {
+        "Title": "Familia"
+      }
     }
   }
 }
