@@ -11,6 +11,8 @@ const Search = () => {
   const { setFilterState } = useFilter();
   const { languageState } = useLanguage();
 
+  const [lookingForFavorites, setLookingForFavorites] = useState(false);
+
   const [toSearch, setToSearch] = useState("");
 
   const [timeOut, setTimeOut] = useState(null);
@@ -56,7 +58,19 @@ const Search = () => {
         <label htmlFor="id">{languageState.texts.Filters.Search.id}</label>
       </div>
       <div className="flex items-center gap-2 checkbox-container">
-        <input type="checkbox" name="favorites" id="favorites" />
+        <input
+          type="checkbox"
+          name="favorites"
+          id="favorites"
+          checked={lookingForFavorites}
+          onChange={(e) => {
+            setFilterState({
+              type: "change-favorite",
+              value: e.target.checked,
+            });
+            setLookingForFavorites(e.target.checked);
+          }}
+        />
         <label htmlFor="favorites">
           {languageState.texts.Filters.Search.favorites}
         </label>

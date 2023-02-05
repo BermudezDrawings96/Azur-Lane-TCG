@@ -29,6 +29,10 @@ const Home = () => {
     setFilterState({ type: "set-result", array: Object.values(db.cards) });
   }, []);
 
+  const makeFavorite = (id) => {
+    setFilterState({ type: "make-favorite", target: id });
+  };
+
   return (
     <div>
       <div className="flex header gap-3">
@@ -52,7 +56,7 @@ const Home = () => {
       </div>
       <div className="main">
         {filterState.result.map((item) => (
-          <Card key={item.id} {...item} />
+          <Card key={item.id} {...item} makeFavorite={makeFavorite} />
         ))}
       </div>
     </div>

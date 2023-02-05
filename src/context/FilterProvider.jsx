@@ -15,6 +15,29 @@ const filterReducer = (filterState, action) => {
       const { array } = action;
       return { ...filterState, result: array, original: [...array] };
     }
+    case "make-favorite": {
+      const { target } = action;
+      const { original } = filterState;
+      const newOriginal = [...original];
+      const index = newOriginal.findIndex(
+        (item) => String(item.id) === String(target)
+      );
+      if (index >= 0)
+        newOriginal[index].favorite = newOriginal[index].favorite
+          ? false
+          : true;
+
+      return { ...filterState, original: newOriginal };
+    }
+    case "change-favorite": {
+      const { value } = action;
+      const { original } = filterState;
+      const result = applyFilters(
+        { ...filterState, favorites: value },
+        original
+      );
+      return { ...filterState, result };
+    }
     case "change-input": {
       const { value } = action;
       const { original } = filterState;

@@ -46,7 +46,14 @@ const searchingByInput = (input, array) => {
  * @param {any[]} array
  */
 export const applyFilters = (filters, array) => {
-  const { nationFilter, rarityFilter, typeFilter, tierFilter, input } = filters;
+  const {
+    nationFilter,
+    rarityFilter,
+    typeFilter,
+    tierFilter,
+    input,
+    favorites,
+  } = filters;
   // by nation
   const nations = applyingFilter("nation", Object.keys(nationFilter), array);
   // by rarity
@@ -57,5 +64,6 @@ export const applyFilters = (filters, array) => {
   const types = applyingFilter("type", Object.keys(typeFilter), tiers);
   // by input
   const inputs = searchingByInput(input ? input.toLowerCase() : "", types);
-  return inputs;
+  console.log(inputs);
+  return favorites ? inputs.filter((item) => item.favorite) : inputs;
 };
