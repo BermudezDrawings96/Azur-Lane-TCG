@@ -182,6 +182,27 @@ body {
   min-height: 360px;
   transition: all 500ms ease;
   background-color: #222;
+  position: relative;
+}
+
+.opacity-up {
+  opacity: 1;
+}
+
+.opacity-down {
+  opacity: 0;
+}
+
+.favorite-button {
+  transition: opacity 500ms ease;
+  font-size: 18px;
+  bottom: 2px;
+  right: 5px;
+  padding-top: 2px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  position: absolute;
 }
 
 .card:hover {
