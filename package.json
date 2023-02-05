@@ -1,6 +1,6 @@
 {
   "name": "azur-lane-tcg",
-  "version": "0.2.6",
+  "version": "0.3.6",
   "private": true,
   "dependencies": {
     "@fontsource/poppins": "^4.5.10",
