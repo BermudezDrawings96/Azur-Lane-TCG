@@ -21,19 +21,32 @@ const applyingFilter = (attribute, filter, array) => {
 
 /**
  *
+ * @param {string} input
+ * @param {object[]} array
+ */
+const searchingByInput = (input, array) => {
+  if (!input.length) return array;
+  const result = [];
+  for (const item of array) {
+    const { name, description, effectName, serie } = item;
+    if (
+      (name && name.toLowerCase().indexOf(input) >= 0) ||
+      (description && description.toLowerCase().indexOf(input) >= 0) ||
+      (effectName && effectName.toLowerCase().indexOf(input) >= 0) ||
+      (serie && serie.toLowerCase().indexOf(input) >= 0)
+    )
+      result.push(item);
+  }
+  return result;
+};
+
+/**
+ *
  * @param {object} filters
  * @param {any[]} array
  */
 export const applyFilters = (filters, array) => {
-  const { nationFilter, rarityFilter, typeFilter, tierFilter } = filters;
-  if (
-    !Object.keys(nationFilter).length &&
-    !Object.keys(rarityFilter).length &&
-    !Object.keys(typeFilter).length &&
-    !Object.keys(tierFilter).length
-  )
-    return array;
-  console.log(nationFilter, rarityFilter, typeFilter, tierFilter);
+  const { nationFilter, rarityFilter, typeFilter, tierFilter, input } = filters;
   // by nation
   const nations = applyingFilter("nation", Object.keys(nationFilter), array);
   // by rarity
@@ -42,5 +55,7 @@ export const applyFilters = (filters, array) => {
   const tiers = applyingFilter("tier", Object.keys(tierFilter), rarities);
   // by type
   const types = applyingFilter("type", Object.keys(typeFilter), tiers);
-  return types;
+  // by input
+  const inputs = searchingByInput(input.toLowerCase(), types);
+  return inputs;
 };

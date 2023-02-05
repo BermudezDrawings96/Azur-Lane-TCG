@@ -15,6 +15,12 @@ const filterReducer = (filterState, action) => {
       const { array } = action;
       return { ...filterState, result: array, original: [...array] };
     }
+    case "change-input": {
+      const { value } = action;
+      const { original } = filterState;
+      const result = applyFilters({ ...filterState, input: value }, original);
+      return { ...filterState, result };
+    }
     case "toggle-nation": {
       const { value, nation } = action;
       const { nationFilter, original } = filterState;
